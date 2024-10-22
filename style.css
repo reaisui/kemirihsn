@@ -85,8 +85,22 @@ ul li:hover {
         padding: 10px;
     }
 }
-/* Responsive Video */
-/* Responsive Video */
+/* styles.css */
+
+/* Reset beberapa default styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Responsif Gambar */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Kontainer untuk video YouTube dan TikTok */
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
@@ -94,6 +108,7 @@ ul li:hover {
     overflow: hidden;
     max-width: 100%;
     background: #000;
+    margin-bottom: 20px;
 }
 
 .video-container iframe {
@@ -102,4 +117,50 @@ ul li:hover {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* Styling untuk Disqus */
+#disqus_thread {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+/* Kontainer untuk berita terkait dan komentar */
+.related-news-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.related-news {
+    margin-bottom: 15px;
+}
+
+/* Kontainer untuk video YouTube dan TikTok di samping kanan */
+.sidebar {
+    margin-top: 20px;
+}
+
+/* Membuat sidebar video responsif */
+.sidebar h5 {
+    margin-top: 0;
+}
+
+/* Mengatur tampilan kolom */
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col-md-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .col-md-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        padding-left: 15px;
+    }
 }
